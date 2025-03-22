@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0bf37e9fb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Projects</a></li>
+                    <li><a href="#portfolio">My Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>APIGEE Developer</h1>
+                <p>Hi, I'm <span>Nainaz</span> from India</p>
+                <!--<p>APIgee Developer</p>
+                <h1>Hi, I'm <span>Nainaz</span><br>from India</h1>-->
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------------------------------------ABOUT-------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate APIgee developer with hands-on experience in designing and implementing secure, scalable API gateways using Google Apigee Edge. Adept at building efficient CI/CD pipelines to streamline deployment processes. Enthusiastic learner with a commitment to delivering high-performance solutions and collaborating in agile teams</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>•	API Management Tools</span><br>Apigee Edge, Postman, Swagger</li>
+                            <li><span>•	Security Protocols</span><br>OAuth 2.0, JWT, HMAC, API Key Management</li>
+                            <li><span>•	Version Control Systems</span><br>Git, GitHub, Bitbucket (including branching, merging, rebasing, and conflict resolution)</li>
+                            <li><span>•	CI/CD Tools</span><br>Jenkins, BitBucket, Release Life Cycle Management, Change request(CR)</li>
+                            <li><span>•	Cloud Platforms</span><br>Google Cloud Platform (GCP)</li>
+                            <li><span>•	Web Development</span><br>HTML5, Tailwind CSS, Javascript</li>
+                            <li><span>•	Programming Languages</span><br>Java, Python</li>
+                        </ul>
+                        <p class="course-title">Certificates & Courses</p>
+                        <div id="cert-lists">
+                            <div class="certificate">
+                                <a href="https://www.credential.net/6b54ff6d-0505-483d-ac25-31f7f6a0d3b7#acc.za3hjesZ">
+                                    GOOGLE CLOUD CERTIFIED - ASSOCIATE CLOUD ENGINEER
+                                </a>
+                            </div>
+                            <div class="certificate">
+                                <a href="https://partner.cloudskillsboost.google/public_profiles/ad907b28-01f8-4e15-80bc-1330595e571f">
+                                    SILVER BADGE - CloudSkillsBoost
+                                </a>
+                            </div>
+                            <div class="certificate">
+                                <a href="https://www.udemy.com/certificate/UC-2457854c-660a-47ad-b764-146c683f2233/">
+                                    Apigee Edge - Beginner to Paid Professional
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <div class="experience-block">
+                            <div>
+                                <h3>TATA CONSULTANCY SERVICES</h3>
+                                <H4><span>Designation: </span>System Engineer</H4>
+                                <H4><span>Role: </span>APIGEE developer</H4>
+                                <P>AUGUST 2022 - PRESENT</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents"  id="education">
+                        <ul>
+                            <li><span>2022</span><br>BACHELOR OF ENGINEERING (CSE), VISHVESWARAYA TECHNOLOGICAL UNIVERSITY<br>
+                                <span>Graduated at a grade of 8.49 CGPA with academic excellence.</span>
+                            </li>
+                            <li><span>2018</span><br> PRE-UNIVERSITY COURSE, MAHESH PU COLLEGE<br>
+                                <span>Completed PUC with the percentage of 88.17%.</span>
+                            </li>
+                            <li><span>2016</span><br>SSLC, NEHRU ENGLISH SCHOOL<br>
+                                <span>Completed SSLC with the percentage of 74.08%.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------------------------MY PROJECTs services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>APIGEE - HAMC policy</h2>
+                    <p>Verify the message using HMAC policy. And convert the known XML data to JSON format without using XML to JSON message policy</p>
+                    <a href="https://nainaz.hashnode.dev/project-based-on-hamc-policy">CLICK HERE</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>APIGEE - Verify API key</h2>
+                    <p>Project based on the Basic authentication, Verify API key, and Javascript policy</p>
+                    <a href="https://nainaz.hashnode.dev/project-based-on-basic-authentication-verify-api-key-and-javascript-policy">CLICK HERE</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Type Speed Checker</h2>
+                    <p>Display typing speed in secounds, and number of letters and words per minutes typed</p>
+                    <a href="https://nainaz-55.github.io/Type-Speed-Checker/">CLICK HERE</a>
+                </div>
+            </div>
+            <a href="Projects.html" class="btn">See More</a>
+        </div>
+    </div>
+<!----------------------------------------------------------------BLOGS--------------------------------------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Blogs</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work5.png">
+                <div class="layer">
+                    <h3>APIGEE Series</h3>
+                    <p>Enter the APPIGE series to learn APIGEE</p>
+                    <a href="https://nainaz.hashnode.dev/series/apigee"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work4.png">
+                <div class="layer">
+                    <h3>API-Application Program Interface</h3>
+                    <p>Read eight minutes to know what is an API, API methods and API response codes</p>
+                    <a href="https://nainaz.hashnode.dev/api-application-program-interface"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+            <div class="work">
+                <img src="Images/work2.jpg">
+                <div class="layer">
+                    <h3>Git branching and merging</h3>
+                    <p>Read twelve minutes to understand branching and merging using git commands</p>
+                    <a href="https://nainaz.hashnode.dev/git-branching-and-merging"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work3.png">
+                <div class="layer">
+                    <h3>API Types</h3>
+                    <p>Read four min to know Types of APIs in the real world</p>
+                    <a href="https://nainaz.hashnode.dev/api-types"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work1.jpg">
+                <div class="layer">
+                    <h3>Monolithic vs Microservices architecture based on APIs</h3>
+                    <p>Read six minutes to understand the architecture of Monolithic and Microservices</p>
+                    <a href="https://nainaz.hashnode.dev/monolithic-vs-microservices-architecture-based-on-apis"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work6.png">
+                <div class="layer">
+                    <h3>Apigee(-X) account</h3>
+                    <p>Steps to create a free Apigee X account to learn and practice an Apigee Edge platform</p>
+                    <a href="https://nainaz.hashnode.dev/create-an-apigee-x-account-for-free"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>    
+        </div>
+        <a href="https://nainaz.hashnode.dev/" class="btn" id="btn-top">See more</a>
+    </div>
+</div>
+
+<!-------------------------------------------------------------CONTACT----------------------------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>nainaz.592000@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 9663042475</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/nainaz-nainaz-799569210/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Nainaz-55"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://nainaz.hashnode.dev/"><i class="fa-brands fa-hashnode"></i></i></a>
+                    <a href="https://partner.cloudskillsboost.google/public_profiles/ad907b28-01f8-4e15-80bc-1330595e571f"><i class="fa-solid fa-cloud"></i></i></a>
+                </div>
+                <a href="Images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Nainaz, <i class="fa-solid fa-heart"></i> portfolio</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz2R_TBBlXQwCDOYOJMXHRP4U4m72RYVkU2Mn7VaRHpGJ3IvCQcESIo6wQEI12Em0liKg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    });
+  </script>
+</body>
+</html>
